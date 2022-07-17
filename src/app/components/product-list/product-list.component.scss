@@ -1,0 +1,32 @@
+@import "../../../assets/scss/Helpers/variables";
+
+.product-list__content {
+  position: relative;
+}
+.product-list__btn {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.product-slider {
+  position: absolute;
+  cursor: pointer;
+  top: 45%;
+  transform: translateY(-50%);
+  width: 64px;
+  height: 64px;
+  border: 1px solid #d1d1d1;
+  border-radius: 50%;
+  line-height: 64px;
+  text-align: center;
+  i {
+    color: $gray-slider;
+    font-size: 1.5rem;
+  }
+  &-left {
+    left: 32px;
+  }
+  &-right {
+    right: 32px;
+  }
+}

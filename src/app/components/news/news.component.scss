@@ -1,0 +1,27 @@
+@import "../../../assets/scss/Helpers/mixin";
+@import "../../../assets/scss/Helpers/variables";
+.news-content {
+  display: flex;
+  gap: 10rem;
+  flex-wrap: nowrap;
+}
+.news-title {
+  @include styleText($black-darker, 3.4375rem, $fw-400);
+}
+.news-form {
+  .btn-main.btn {
+    padding: 16px 40px;
+    text-transform: uppercase;
+  }
+  .news-input {
+    padding: 8px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: transparent transparent $black-darker transparent;
+    margin-right: 8px;
+    min-width: 400px;
+    &::placeholder {
+      @include styleText(#747474, 1rem, $fw-300);
+    }
+  }
+}
